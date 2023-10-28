@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Name - Portfolio</title>
+<style>
+body {
+font-family: Constantia,Georgia;
+margin: 100px;
+padding: 100px;
+background-color: #f0f0f0;
+}
+header {
+background-color: skyblue;
+color: skyblue;
+text-align: center;
+padding: 2rem 0;
+margin: 1rem;
+position: relative;
+border-radius: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.header-content h1{
+font-size: 2.5rem;
+font-weight: bold;
+color: white;
+}
+.header-content p{
+color: white;
+}
+/* Add styles for the round profile picture */
+.profile-picture {
+width: 150px; /* Adjust the size as needed */
+height: 150px;
+border-radius: 75%; /* Create a circular shape */
+object-fit: cover; /* To ensure the image fills the circular area */
+position: absolute; /* Add this */
+top: 80px; /* Adjust top position as needed */
+left: 80px; /* Adjust left position as needed */
+}
+nav {
+background-color: skyblue;
+color: black;
+margin: 1rem;
+padding: 10px;
+text-align: center;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+nav ul {
+list-style-type: none;
+padding: 0;
+}
+nav ul li {
+display: inline;
+margin: 0 20px;
+}
+nav ul li a {
+text-decoration: none;
+color: #fff;
+}
+.section-content {
+background-color: #fff;
+padding: 2rem;
+margin: 1rem;
+border-radius: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+text-align: justify;
+}
+.download-button {
+background-color: #333;
+color: #fff;
+padding: 0.5rem 1rem;
+text-decoration: none;
+border-radius: 20px;
+display: inline-block;
+margin-top: 10px;
+align-self: center;
+}
+.download-button:hover {
+background-color: #555;
+}
+footer {
+text-align: center;
+padding: 1rem 0;
+margin: 1rem;
+border-radius: 20px;
+background-color: skyblue;
+color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.section {
+background-image: linear-gradient(to left , white , skyblue );
+margin: 1rem;
+border-top-right-radius: 20px;
+border-bottom-left-radius: 20px;
+}
+ul {
+list-style-type: disc;
+padding-left: 20px;
+}
+</style>
+</head>
+<body>
+<div class="section">
+<header>
+<div class="header-content">
+<!-- Add your profile picture here -->
+<h1>PRAVIN KUMAR R</h1>
+<p>Web Designer</p>
+</div>
+</header>
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#resume">Resume</a></li>
+</ul>
+</nav>
+<section id="about">
+<div class="section-content">
+<h2>About Me</h2>
+<p>&nbsp;&nbsp;&nbsp;I am capable of adapting to any environment in learning new things.I have positive attitude quick leaner&good listener all leads my strength.
+My hobbies are cooking,traveling,Learning good things from others.My strength is Hard Work.My weakness is I can't take reset until my work is completed.
+My short time goal is to become more responsible and respectable position in the organisation. That's all about me..</p>
+</div>
+</section>
+<section id="education">
+<div class="section-content">
+<h2>Education</h2>
+<p>Government arts college, coimbatore.<br>
+Bsc Computer science </p>
+</div>
+</section>
+<section id="skills">
+<div class="section-content">
+<h2>Skills</h2>
+<ul>
+<li>Basic programming knowledge in C,C++,Python,Javascript,Linux,MySQL</li>
+<li>website creation</li>
+<li>Ms-office</li>
+<li>Communication skill</li>
+</ul>
+</div>
+</section>
+<section id="projects">
+<div class="section-content">
+<h2>Projects</h2>
+<ul>
+<li><a href="#">E-commerce for Mobile shopping </a></li>
+<li><a href="#">Online movie streaming website</a></li>
+<!-- Add more project links here -->
+</ul>
+</div>
+</section>
+<section id="resume">
+<div class="section-content">
+<center>
+<h2>Resume</h2>
+<a
+href="https://drive.google.com/file/d/1Fjf9NlokC-6Cvk6CimvWKehDOOl8855V/view?usp=sharin
+g" target="_blank" class="download-button">Download CV</a>
+</center>
+</div>
+</section>
+<footer>
+<p>&copy; 2023 PRAVIN KUMAR R</p>
+</footer>
+</div>
+<script>
+// Smooth scrolling to section when clicking on navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href').substring(1);
+const targetElement = document.getElementById(targetId);
+if (targetElement) {
+window.scrollTo({
+top: targetElement.offsetTop,
+behavior: 'smooth'
+});
+}
+});
+});
+</script>
+</body>
+</html>
